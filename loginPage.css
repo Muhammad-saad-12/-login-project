@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-decoration: none;
+}
+.header{
+margin-top: 130px;
+    margin-bottom:100px;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+}
+.logo{
+    padding: 60px;
+    padding-left:210px;
+    padding-right:0;
+}
+.logo img{
+    height: 100px;
+    margin-left: auto;
+    margin-right:13px;
+}
+.logo p{
+    padding-left: 30px;
+    font-size: larger;
+}
+.card{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin-left:auto;
+    margin-right:auto;
+    width: 350px;
+    text-align:center;
+    box-shadow: 0px 0px 8px;
+    border-radius: 7px;
+    padding: auto;
+}   
+.card p{
+    color: black;
+    font-size: 18px;
+}
+.card form{
+    padding: 25px 25px 25px;
+}
+input[type="email"]{
+    font-size: large;
+    margin: 12px 0;
+    height:35px;
+border-radius:5px;
+border: 1px solid rgb(205, 200, 200);
+width: 100%;
+padding:2px;
+}
+input[type="password"]{
+    font-size: large;
+    margin: 5px 0 15px 0;
+    height:35px;
+    border: 1px;
+    border-radius: 5px;
+    border: 1px solid rgb(205, 200, 200);
+    width: 100%;
+    padding: 2px;
+}
+.card button{
+    margin:2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding:10px 0;
+    width: 310px;
+    background-color: rgb(6, 130, 212);
+    border-radius: 5px;
+    border: 1px ;
+    cursor: pointer;
+    color: aliceblue;
+}
+.card button:hover{
+    background-color: rgb(43, 137, 226);
+}
+.forget{
+    margin-bottom:10px ;
+}
+.forget a{
+    color: rgb(0, 123, 255);
+}
+.card hr{
+    display: inline-block;
+    width: 120px;
+}
+.btn{
+    margin: 15px 63px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(97, 216, 97);
+cursor: pointer;
+color: aliceblue;
+}
+.btn:hover{
+    background-color: green;
+}
+.footer{
+    background-color: antiquewhite;
+    padding:5vh;
+}
+/*----------------------------Media-Queries-------------------------------------*/
+@media(max-width:500px){
+    .card p{
+        font-size: medium;
+    }
+    .card form{
+        font-size: small;
+    }
+    .card{
+        width: 250px;
+        min-width: 250px;
+        align-items:center;
+    }
+    .card button{
+        width: 200px;
+    }
+    .card hr{
+        display: inline-block;
+    width: 65px; 
+    }
+    .header{
+        display: block;
+    }
+    .logo{
+        padding: 60px 0 14px 60px;
+    }
+    .btn{
+        margin: 0 16px;
+    }
+}
