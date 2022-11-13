@@ -1,49 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="images/icons8-facebook-48.png">
-  <title>Face book</title>
-  <link rel="stylesheet" href="loginPage.css">
-</head>
-<body>
-  <div class="parent">
-  <div class="container">
-  <div class="textbox">
-    <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" class="w-50">
-  <p class="line">
-    Facebook helps you connect and share with the people in your life.
-  </p>  
-  </div>
-  <div class="card">
-    <form class="login-form" action="#">
-    <input type="text" class="form-control" placeholder="Email address or phone number" required>
-    <input type="password" class="form-control" placeholder="Password" required>
-    <div class="lbtn">
-    <button type="btn">Log in</button>
-  </div>
-  <div class="text">
-    <a href="#">Forgotten password?</a>
-    </div>
-    <div class="btn">
-      <hr>
-    <button type="button" class="btn btn-success btn-lg mt-3">Create New Account</button>
-    </div>
-  </form>
-  <p class=" text-center"><b><a href="https://www.facebook.com/pages/create/?ref_type=registration_form" target="_blank">Create a Page</a></b> for a celebrity, band or business.</p>
-  </div>
-  </div>
-<div class="footer">
-  <p class="lan">
-    English(UK)  ردو न्दीবাং লাਪੰਜਾਬੀ ગુજરાતી Deutsch  Español
-    <p class="footer_text">
-    SignUp Login Messenger FacebookLite Watch Places Games Marketplace Meta Pay Oculus Portal Instagram Bulletin Fundraisers Services Voting Information Centre Groups About Createad CreatePage Developers Careers Privacy Policy PrivacyCentre Cookies AdChoices Terms Help Contact uploading and non-users
-    <p>
-    Meta © 2022</p>
-  </p>
-  </div>
-</div>
-</body>
-</html>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 100px;
+}
+body{
+  background-color: #f0f2f5;
+  height: 100vh;
+}
+.container{
+  margin-top: 120px;
+  display: grid;
+  height:45%;
+  grid-template-columns:1fr 1fr ;
+}
+.textbox{
+  align-self: end;
+  justify-self:end;
+  height: 80%;
+}
+.w-50{
+  /*border: 2px solid rgb(55, 0, 255);*/ 
+  height: 7rem;
+  margin-bottom: -19px;
+}
+.line{
+  font-size: 24px;
+  margin-top: 5px;
+  margin-left:30px;
+  max-width:450px ;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  /*border: 2px solid rgb(255, 0, 64);*/ 
+}
+.card{
+ /* border: 2px solid rgb(225, 255, 0);*/
+  align-self: start;
+  justify-self:start;
+  display: block;
+  margin-top: 25px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.login-form{
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  width: 70%;
+  height: 320px;
+  text-align: center;
+  box-shadow: 0px 0px 4px;
+}
+.lbtn button{
+  margin-top: 15px;
+width: 100%;
+background-color:#1877f2;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  height: 40px;
+  font-weight: 700;
+  border: 1px;
+  cursor: pointer;
+}
+.lbtn button:hover{
+  background-color: #235da9;
+  transition: 0.5s;
+}
+input{
+  padding: 5px;
+  margin-top: 12px;
+  border-radius: 5px;
+  height: 45px;
+  width: 100%;
+color:  #979191;
+font-size: 17px;
+border: 1px solid rgb(219, 212, 212);
+}
+.text{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.text a{
+  text-decoration: none;
+  color: #1877f2;
+}
+.text a:hover{
+  text-decoration: underline;
+}
+hr{
+  margin-bottom: 14px;
+}
+.btn button{
+  margin: 5px;
+  padding: 12px;
+  border-radius: 7px;
+  background-color: rgb(66,183,42);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  border: 1px;
+  cursor: pointer;
+}
+.btn button:hover{
+  background-color:rgb(5, 123, 19);
+  transition: 0.5s;
+}
+.text-center{
+  padding-right:150px;
+  padding-top: 12px;
+}
+.text-center a{
+  text-decoration: none;
+  color: black;
+}
+.footer{
+  background-color: #fff;
+margin-top: auto;
+}
+.footer p{
+  padding: 8px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 63%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  color: #979191;
+  text-align: justify;
+ word-spacing: 25px;
+ 
+ vertical-align: baseline;
+}
+.lan{
+border-bottom: 2px solid grey;
+}
+@media(max-width:1500px){
+  .textbox{
+      align-self:end;
+  }
+}
+@media(min-width:1500px){
+  .card{
+      margin: 0px 110px;
+  }
+}
+@media(max-width:970px){
+  .container{
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  .textbox{
+      justify-self: center;
+      margin-bottom: 15px;
+      margin-left: 10%;
+      margin-right: 2%;
+      width: 80%;
+  }
+  .card{
+  margin-left:20%;
+  }
+}
